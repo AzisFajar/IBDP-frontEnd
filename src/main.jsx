@@ -10,6 +10,8 @@ import StokPage from './pages/stokdarah.jsx'
 import { ThemeProvider } from '@material-tailwind/react'
 import DonorPage from './pages/donor.jsx'
 import ForumPage from './pages/forum.jsx'
+import DetailCerita from './pages/detailcerita'
+import ArtikePage from './pages/detailartikel'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
   path: "forumberbagi",
   element: <ForumPage />
 },
+{
+  path : "forumberbagi/:id",
+  element : <DetailCerita />
+},
+{
+  path : "artikel",
+  element : <ArtikePage />
+}
 ])
 
 
